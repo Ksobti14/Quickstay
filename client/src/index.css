@@ -1,0 +1,580 @@
+body {
+  background-color: #e8f4f8; /* Soft pastel blue background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* A modern, clean font */
+}
+
+.container {
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #34495e; /* Rich navy blue */
+}
+
+.navbar-dark .navbar-brand, 
+.navbar-dark .nav-link {
+  color: #f8f9fa; /* Light text */
+}
+
+.navbar-dark .nav-link {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #1abc9c; /* Teal hover effect */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.room-card {
+  background: linear-gradient(145deg, #ffffff, #e6e9f0); /* Soft gradient */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.smallimg {
+  height: 200px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.room-name {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #2c3e50; /* Darker text for better contrast */
+}
+
+.room-detail {
+  font-size: 16px;
+  color: #7f8c8d; /* Neutral gray */
+  margin: 6px 0;
+}
+
+.btn {
+  background-color: #1abc9c; /* Fresh teal */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #16a085; /* Slightly darker teal */
+  transform: translateY(-2px);
+}
+
+.booking-screen-container {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 1100px;
+}
+
+.room-details-container {
+  border: 2px solid #bdc3c7; /* Soft gray border */
+  border-radius: 10px;
+  padding: 25px;
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.payment-button {
+  margin-top: 20px;
+}
+
+.payment-button .StripeCheckout {
+  display: inline-block;
+}
+
+.custom-modal {
+  max-width: 60%;
+  margin: auto;
+}
+
+.custom-modal .modal-content {
+  background: linear-gradient(145deg, #ffffff, #d3dce6); /* Gentle pastel gradient */
+  color: #34495e; /* Deep navy for text */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.custom-modal .modal-header {
+  background-color: #16a085; /* Teal header */
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+
+.custom-modal .modal-body {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 20px;
+}
+.custom-modal .modal-body img {
+  width:100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+.custom-modal .btn-custom {
+  background-color: #e74c3c; /* Vibrant red button */
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-modal .btn-custom:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+.custom-modal .btn-close {
+  background-color: #3498db; /* Calm blue close button */
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-modal .btn-close:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+.custom-search-input {
+  border: 2px solid #4CAF50;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 17px;
+}
+
+.custom-search-input:focus {
+  border-color: #2E8B57;
+  box-shadow: 0 6px 8px rgba(46, 139, 87, 0.2);
+}
+
+.custom-search-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.custom-search-container {
+  margin: 20px 0;
+}
+.custom-range-picker{
+  border: 2px solid #4CAF50;
+  border-radius: 25px;
+  font-size: 25px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 35px;
+}
+.selection-container{
+  border: 2px solid #4CAF50;
+  border-radius: 25px;
+  font-size: 20px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-container {
+  margin-top: 20px;
+}
+
+.booking-card {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.booking-card.confirmed {
+  border-left: 4px solid #4caf50;
+}
+
+.booking-card.cancelled {
+  border-left: 4px solid #f44336;
+  background-color: #fbe9e7;
+}
+
+.booking-card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.booking-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.booking-card button {
+  margin-top: 10px;
+}
+/* Container for the registration page */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form card styling */
+.form-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title styling */
+.form-card h2 {
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input field styling */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Button styling */
+.btn-primary {
+  background: #2575fc;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #1a60c8;
+  box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+}
+
+/* Link styling */
+a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Margin adjustments for form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Error and success message styling */
+.Toastify__toast--error {
+  background: #ff4d4f !important;
+  color: #fff !important;
+}
+
+.Toastify__toast--success {
+  background: #4caf50 !important;
+  color: #fff !important;
+}
+
+/* Animation for the form */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-card {
+      padding: 20px;
+  }
+
+  .form-card h2 {
+      font-size: 1.5rem;
+  }
+
+  .btn-primary {
+      font-size: 16px;
+      padding: 8px;
+  }
+}
+/* Container for the login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form card styling */
+.form-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title styling */
+.form-card h2 {
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input field styling */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #ff758c;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 117, 140, 0.5);
+}
+
+/* Button styling */
+.btn-primary {
+  background: #ff758c;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #e14d68;
+  box-shadow: 0 4px 15px rgba(255, 117, 140, 0.3);
+}
+
+/* Link styling */
+a {
+  color: #ff758c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Margin adjustments for form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.Toastify__toast--error {
+  background: #ff4d4f !important;
+  color: #fff !important;
+}
+
+/* Success message styling */
+.Toastify__toast--success {
+  background: #4caf50 !important;
+  color: #fff !important;
+}
+
+/* Animation for the form */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-card {
+      padding: 20px;
+  }
+
+  .form-card h2 {
+      font-size: 1.5rem;
+  }
+
+  .btn-primary {
+      font-size: 16px;
+      padding: 8px;
+  }
+}
+/* Styles for the welcome page */
+.welcome-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen */
+  background-image: url('backgroundwelcome.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center; 
+}
+
+.welcome-content {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.welcome-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: #f0f0f0;
+}
+
+.btn-primary {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+      font-size: 2rem;
+  }
+
+  .welcome-subtitle {
+      font-size: 1rem;
+  }
+
+  .btn-primary {
+      font-size: 1rem;
+      padding: 12px 24px;
+  }
+}
